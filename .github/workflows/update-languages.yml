@@ -1,28 +1,28 @@
-name: Update Language Stats
+name: Update Language Stats (Powered by Mazen's Brain 🧠)
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs every midnight
-  workflow_dispatch:  # Allows manual update
+    - cron: "0 0 * * *"  # 🕛 Runs every midnight (Cinderella style)
+  workflow_dispatch:  # 🎬 Click to update manually!
 
 jobs:
   update-langs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Mazen's Magical Codebase ✨
         uses: actions/checkout@v3
 
-      - name: Fetch Language Stats
+      - name: Summoning the Language Pie Chart 🥧
         run: |
           curl -H "Authorization: token ${{ secrets.GH_PAT }}" \
                -H "Accept: application/vnd.github.v3+json" \
-               "https://github-readme-stats.vercel.app/api/top-langs/?username=MazenMMostafa&layout=pie&count_private=true&theme=dark" \
+               "https://github-readme-stats.vercel.app/api/top-langs/?username=MazenMMostafa&layout=pie&count_private=true&theme=radical" \
                -o languages.svg
 
-      - name: Commit & Push Changes
+      - name: Save and Push this Beautiful Work of Art 🎨
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "Mazen's GitHub Bot 🤖"
+          git config --global user.email "bot@github.com"
           git add languages.svg
-          git commit -m "Updated language stats"
+          git commit -m "Updated language stats. Behold the greatness!"
           git push
