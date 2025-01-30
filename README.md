@@ -13,8 +13,7 @@ Welcome to my GitHub profile, where I keep my code shiny and my stats even shini
 Behold! My **most used languages**—in a glorious, circular pie chart! 🍕  
 Check out how much I've been playing with code and which language is currently **holding my heart hostage** ❤️.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MazenMMostafa&layout=pie&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
-
+![Top Langs](languages.svg)
 ---
 
 ## 🧑‍💻 My Software Skills
